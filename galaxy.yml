@@ -1,0 +1,18 @@
+namespace: "gaeldb"
+name: "callback"
+version: "1.0.0"
+description: "A collection of Ansible callback reporter"
+readme: "README.md"
+authors:
+    - Gael D. Barbier (@gaeldb)
+dependencies: {
+}
+license:
+    - "GPL-3.0-or-later"
+tags:
+    - callback
+    - report
+repository: "https://github.com/gaeldb/ansible-callback-report"
+documentation: "https://github.com/gaeldb/ansible-callback-report"
+homepage: "https://github.com/gaeldb/ansible-callback-report"
+issues: "https://github.com/gaeldb/ansible-callback-report"

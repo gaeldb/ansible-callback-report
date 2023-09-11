@@ -47,7 +47,7 @@ class CallbackModule(CallbackBase):
 
     def _fill_error_report(self, result):
         host = self.host_label(result)
-        fail_result = result._result['msg']
+        fail_result = result._result['msg'].replace('\n', ' ')
         fail_ip = result._host.vars.get('ansible_host', result._host.address)
         fail_action = result.task_name
         self.fail_report[host] = {
