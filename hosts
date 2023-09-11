@@ -1,0 +1,5 @@
+[test_set]
+first ansible_host=127.0.0.1
+second ansible_host=127.0.0.1
+third ansible_host=127.0.0.1
+unreach ansible_host=1.1.1.1

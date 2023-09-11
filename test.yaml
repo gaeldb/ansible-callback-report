@@ -1,0 +1,20 @@
+---
+
+- name: Test callback
+  hosts: test_set
+  gather_facts: no
+
+  remote_user: gael
+
+  tasks:
+    - name: Ping host
+      ansible.builtin.ping:
+
+    - name: Fail host first
+      ansible.builtin.fail:
+        msg: Task fail
+      when: inventory_hostname == 'first'
+
+    - name: Check if file exists
+      ansible.builtin.stat:
+        path: /etc/hosts
