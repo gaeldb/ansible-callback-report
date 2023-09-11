@@ -1,6 +1,6 @@
 namespace: "gaeldb"
 name: "callback"
-version: "1.0.0"
+version: "1.1.0"
 description: "A collection of Ansible callback reporter"
 readme: "README.md"
 authors:
