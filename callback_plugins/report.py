@@ -9,7 +9,7 @@ from ansible import constants as C
 class CallbackModule(CallbackBase):
     CALLBACK_VERSION = 2.0
     CALLBACK_TYPE = 'aggregate'
-    CALLBACK_NAME = 'report'
+    CALLBACK_NAME = 'gaeldb.callback.host_report'
     CALLBACK_NEEDS_ENABLED = True
 
     def __init__(self):
